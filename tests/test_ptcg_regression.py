@@ -246,6 +246,7 @@ def run_controlled_match(
     agent_p0: AuditedAgent,
     agent_p1: AuditedAgent,
     max_steps: int = 160,
+    strict_mode: bool = False,
 ) -> Dict[str, Any]:
     obs, start_data = battle_start(main.DECK, main.DECK)
     if obs is None:
@@ -295,6 +296,11 @@ def run_controlled_match(
                 is_valid = False
 
             if not is_valid:
+                if strict_mode:
+                    raise AssertionError(
+                        f"[STRICT CONTRACT FAILURE] Agent '{active_agent.exp_id}' returned illegal selection {choice} "
+                        f"(options: {len(options)}, min: {min_c}, max: {max_c}) at step {steps} in game {active_agent.current_game_id}."
+                    )
                 contract_errors += 1
                 active_agent.contract_errors += 1
                 choice = list(range(min(max(1, min_c), len(options))))
@@ -315,11 +321,12 @@ def run_controlled_match(
 def run_head_to_head_experiment(
     candidate_id: str,
     games: int = 50,
+    strict_mode: bool = False,
 ) -> Tuple[Dict[str, Any], List[DecisionRecord]]:
     desc, config = CONFIGS[candidate_id]
     print(f"\n" + "=" * 70)
     print(f"BENCHMARK: {candidate_id} ({desc}) vs P0 (Frozen V4 Control)")
-    print(f"Total Games: {games} (Alternating First/Second Turn)")
+    print(f"Total Games: {games} (Alternating First/Second Turn) | Strict Fail-Fast: {strict_mode}")
     print("=" * 70)
 
     candidate_agent = AuditedAgent(candidate_id, config)
@@ -339,11 +346,11 @@ def run_head_to_head_experiment(
         start_len = len(candidate_agent.decision_logs)
 
         if g % 2 == 1:
-            match_res = run_controlled_match(candidate_agent, control_agent)
+            match_res = run_controlled_match(candidate_agent, control_agent, strict_mode=strict_mode)
             res = match_res["result"]
             outcome = "WIN" if res == 0 else ("LOSS" if res == 1 else "DRAW")
         else:
-            match_res = run_controlled_match(control_agent, candidate_agent)
+            match_res = run_controlled_match(control_agent, candidate_agent, strict_mode=strict_mode)
             res = match_res["result"]
             outcome = "WIN" if res == 1 else ("LOSS" if res == 0 else "DRAW")
 
@@ -546,17 +553,17 @@ def generate_ablation_report(results: List[Dict[str, Any]], output_path: Path):
 # ------------------------------------------------------------
 # 4. MAIN ENTRY POINT
 # ------------------------------------------------------------
-def run_all_experiments(games_per_exp: int = 50):
+def run_all_experiments(games_per_exp: int = 50, strict_mode: bool = False):
     print("=" * 75)
     print("STARTING CONTROLLED PTCG HEAD-TO-HEAD BENCHMARK (P0..P4)")
-    print(f"Games per experiment: {games_per_exp}")
+    print(f"Games per experiment: {games_per_exp} | Strict Mode: {strict_mode}")
     print("=" * 75)
 
     all_results = []
     all_audit_records = []
 
     for model_id in ["P0", "P1", "P2", "P3", "P4"]:
-        stats, records = run_head_to_head_experiment(model_id, games=games_per_exp)
+        stats, records = run_head_to_head_experiment(model_id, games=games_per_exp, strict_mode=strict_mode)
         all_results.append(stats)
         all_audit_records.extend(records)
 
@@ -580,6 +587,7 @@ def run_all_experiments(games_per_exp: int = 50):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="PTCG Head-to-Head Benchmark & Audit Suite")
     parser.add_argument("--games", type=int, default=50, help="Games per candidate experiment")
+    parser.add_argument("--strict", action="store_true", help="Fail immediately on any contract error (fail-fast)")
     args = parser.parse_args()
 
-    run_all_experiments(games_per_exp=args.games)
+    run_all_experiments(games_per_exp=args.games, strict_mode=args.strict)
