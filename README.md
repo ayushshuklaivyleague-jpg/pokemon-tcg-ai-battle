@@ -1,118 +1,41 @@
-# ⚡ Pokémon Trading Card Game AI Battle — Competitive Simulation Champions
+# Pokémon TCG AI Battle — Competitive Agent Engineering
 
 <div align="center">
 
 [![Kaggle Competition](https://img.shields.io/badge/Kaggle-Competition-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle)
-[![Benchmark Win Rate](https://img.shields.io/badge/Benchmark_Win_Rate-70.0%25_(14%2F20)-brightgreen?style=for-the-badge&logo=target&logoColor=white)](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle)
-[![Simulator](https://img.shields.io/badge/Simulator-cabt_Engine-red?style=for-the-badge&logo=nintendo-switch&logoColor=white)](https://matsuoinstitute.github.io/cabt/)
-[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Benchmark Win Rate](https://img.shields.io/badge/Audited_Benchmark-70.0%25_(14%2F20)-brightgreen?style=for-the-badge&logo=target&logoColor=white)](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle)
+[![Legality Metric](https://img.shields.io/badge/Legality_Rate-100.0%25_(0_Errors)-blue?style=for-the-badge&logo=checkmarx&logoColor=white)](#-production-champion-citadel-mike-v4)
+[![Simulator](https://img.shields.io/badge/Engine-cabt_v1.14.10-red?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://matsuoinstitute.github.io/cabt/)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-**Official Repository for Competitive AI Training Agents in [The Pokémon Company - PTCG AI Battle Challenge Simulation](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle)**
+**Autonomous decision agents and empirical validation framework developed for [The Pokémon Company - PTCG AI Battle Challenge Simulation](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle) on Kaggle.**
 
-[Overview](#-overview) • [Best Models](#-our-best-models) • [Architecture Evolution](#-architecture-evolution) • [Empirical Benchmarks](#-empirical-benchmarks) • [Quickstart](#-quickstart--local-simulation) • [Submission Guide](#-kaggle-submission-guide)
+[Architecture](#-system-architecture) • [Empirical Results](#-empirical-benchmarks) • [Research Discipline & Ablations](#-experimental-discipline--ablation-findings) • [Local Simulation](#-quickstart--local-simulation) • [Submission](#-kaggle-submission-guide)
 
 </div>
 
 ---
 
-## 🎮 Overview
+## 📌 Executive Summary
 
-The **Pokémon Trading Card Game (PTCG) AI Battle Challenge Simulation** is an international AI competition hosted by **The Pokémon Company**, **HEROZ**, and the **Matsuo Institute** on **Kaggle**. Competitors engineer autonomous reinforcement learning and heuristic AI agents capable of mastering the complex stochasticity, imperfect information, and tactical depth of the Pokémon Trading Card Game.
+Competitive Pokémon Trading Card Game (PTCG) is an imperfect-information, stochastic environment featuring hidden cards (hand, deck, prizes), non-deterministic transitions (coin tosses, random draws), and strict per-turn execution constraints. 
 
-Battles are executed on the high-performance **`cabt` Engine**, an official battle simulator built for `kaggle-environments`. Each turn, agents receive a rich observation containing board state, hand, discard, active Pokémon, and legal move options, and must return optimal action selections within strict latency and legality constraints.
+In this domain, naive tree search and unvalidated heuristic complexity degrade performance due to branching factor explosion and state hallucination. This repository presents:
 
-This repository open-sources our top-performing competition agents, research reports, telemetry corpora, and modular planning engines.
-
----
-
-## 🏆 Our Best Models
-
-### 1. 🥇 CITADEL PTCG MIKE V4 (Production Champion)
-> **Location**: [`main.py`](main.py) & [`agents/mike_v4_champion/`](agents/mike_v4_champion/)  
-> **Benchmark Performance**: **14 / 20 Wins (70.0% Win Rate)** on the official benchmark ladder  
-> **Legality Metric**: **100.0% Legal Selection Rate (0 Disqualifications across 50,000+ decisions)**
-
-* **Deck Archetype**: **Mega Abomasnow ex / Kyogre / Snover** Water Energy Acceleration (`deck.csv`).
-* **Core Philosophy**: Zero-fault contractual legality paired with an ultra-fast $O(1)$ hierarchical action priority engine.
-* **Key Innovations**:
-  * **Strict Selection Contract Validator (`validate_selection`, `legal_selection`)**: Mathematically guarantees selections respect $\text{minCount} \le |\text{selection}| \le \text{maxCount}$, filters duplicate cards, and eliminates out-of-bounds indices.
-  * **Multi-Area Card Resolution**: Recursively traverses `hand`, `active`, `bench`, `discard`, `prize`, and `deck` without engine crashes.
-  * **Hierarchical Priority Scoring**: Prioritizes tempo-critical actions:
-    * ⚔️ **Attacks & 1HKO Lethals**: ~18,000 – 100,000+
-    * 🧬 **Evolution Sequences**: ~70,000 + ($\text{attached energy} \times 500$)
-    * 👥 **Supporters & Hand Refresh**: ~42,000 (adaptive hand size thresholds)
-    * 💧 **Energy Attachment Tempo**: ~35,000 – 39,000 (strict active-first priority)
-    * 🎒 **Targeted Search & Item Plays**: Nest Ball / Ultra Ball / Poffin prioritization
-  * **Deterministic Tie-Breaking**: Scored tuples $(score, -index, index)$ provide 100% bit-exact replayability.
+1. **A Frozen Production Champion (MIKE V4)** achieving **14/20 wins (70.0%)** on the competitive benchmark ladder with **0 legality violations across 50,000+ decisions**.
+2. **A 69-Parameter Memetic Evolutionary Model (Sol Eclipse Alakazam)** achieving a **58.62% decisive win rate** via optimized supporter acceleration and energy-tempo preservation.
+3. **Rigorous Experimental Discipline**: An exhaustive 53-day research campaign documenting why complex lookahead search, counterfactual simulation, and speculative discard heuristics failed to beat the baseline and were systematically rejected.
 
 ---
 
-### 2. 🥈 Codex Sol Eclipse Alakazam (Memetic Evolutionary Champion)
-> **Location**: [`codex_sol_eclipse_alakazam.py`](codex_sol_eclipse_alakazam.py) & [`agents/sol_eclipse_alakazam/`](agents/sol_eclipse_alakazam/)  
-> **Benchmark Performance**: **58.62% Decisive Win Rate** (34W / 24L / 142D) across 400+ head-to-head tournament matches
-
-* **Deck Archetype**: **Alakazam Courage / Abra / Kadabra / Dudunsparce / Fezandipiti ex** 60-card synergy list.
-* **Core Philosophy**: Memetic algorithm parameter optimization combined with shallow 1-ply rollout search and energy tempo preservation.
-* **Key Innovations**:
-  * **69-Parameter Memetic Evolutionary Genome**: Fine-tuned weights governing Pokémon deployment, item usage, tool attachment, and retreat triggers.
-  * **Lean `H_HILDA` Supporter Optimization (Weight: 3150)**: Prioritizes Hilda supporter acceleration to retrieve key evolution pieces (Abra $\to$ Kadabra $\to$ Alakazam) early, producing a statistically confirmed $+7.8\%$ decisive win rate lift.
-  * **Teleportation Retreat Engine**: Uses Alakazam's native Teleportation rather than paying costly energy retreat penalties, preserving energy tempo on attackers.
-  * **1-Ply Forward Lookahead Search**: Built-in `_search_decide` evaluates immediate state transitions while remaining safely within execution time limits.
-
----
-
-### 3. 🔬 Next-Gen Modular Planning Architecture
-> **Location**: [`ptcg_planning/`](ptcg_planning/)  
-> **Core Philosophy**: Principled five-layer decomposition of Pokémon TCG gameplay under imperfect information.
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                     P5: GATED ENSEMBLE                          │
-│     Overrides baseline heuristic ONLY when Δ_eval > τ           │
-└───────────────────────────────┬─────────────────────────────────┘
-                                │
-        ┌───────────────────────┴───────────────────────┐
-        ▼                                               ▼
-┌──────────────────────────────┐        ┌──────────────────────────────┐
-│  P2: OPPONENT THREAT MODEL   │        │ P3: STRICT INFO PROBABILITY  │
-│  • 1HKO danger thresholding  │        │ • Bayesian hidden deck model │
-│  • Retreat emergency alerts  │        │ • Search target feasibility  │
-└──────────────┬───────────────┘        └──────────────┬───────────────┘
-               │                                       │
-               └───────────────────────┬───────────────┘
-                                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│               P4: SHORT-HORIZON COUNTERFACTUAL TREE             │
-│               Bounded 1-ply rollout & leaf valuation            │
-└──────────────────────────────────────┬──────────────────────────┘
-                                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│               P1: STRUCTURED BOARD STATE FEATURES               │
-│               HP differential, energy tempo, prize gap          │
-└──────────────────────────────────────┬──────────────────────────┘
-                                       ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                 P0: FROZEN V4 BASELINE CONTROL                  │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-* **P1 (`state_features.py`)**: Vectorized feature extraction capturing board presence, bench saturation, energy distribution, and prize progression.
-* **P2 (`threat_model.py`)**: Analyzes opponent active energy count, potential damage output, and flags imminent 1HKO lethal threats.
-* **P3 (`prob_info.py`)**: Computes exact hypergeometric probabilities of drawing specific card categories without peeking at hidden opponent hands or prizes.
-* **P4 (`counterfactual.py`)**: Evaluates simulated game states after key branch decisions (search target selection, energy attachment).
-* **P5 (`planner.py`)**: Statistically gated meta-policy ensuring the agent never regresses below the V4 baseline.
-
----
-
-## 📈 Architecture Evolution
+## 🏛️ System Architecture
 
 ```mermaid
 graph TD
     V2["CITADEL PTCG V2<br/>(Deep Minimax Search D2-D3)<br/><i>High latency, state hallucination</i>"]
     V3["CITADEL PTCG V3<br/>(Tactical Priority Heuristic)<br/><i>O(1) execution, tempo-aligned</i>"]
     V4["CITADEL PTCG V4 CHAMPION<br/>(Strict Legality Contract + V3 Core)<br/><b>70.0% Win Rate (14/20 Wins)</b>"]
-    SOL["CODEX SOL ECLIPSE ALAKAZAM<br/>(Memetic Genome + 1-Ply Search)<br/><b>58.62% Decisive Win Rate (Lean Hilda-3150)</b>"]
+    SOL["CODEX SOL ECLIPSE ALAKAZAM<br/>(Memetic Genome + 1-Ply Search)<br/><b>58.62% Decisive Win Rate (Hilda-3150)</b>"]
     PLAN["NEXT-GEN MODULAR PLANNING<br/>(P0 Baseline + P1-P5 Planning Layers)<br/><i>Gated Threat & Counterfactual Reasoning</i>"]
 
     V2 -->|Paradigm Shift to Low Latency| V3
@@ -121,66 +44,142 @@ graph TD
     V4 -->|Principled Modular Extension| PLAN
 ```
 
+### 1. Production Champion: CITADEL MIKE V4
+* **Source**: [`main.py`](main.py) | **Deck**: [`deck.csv`](deck.csv) | **Module**: [`agents/mike_v4_champion/`](agents/mike_v4_champion/)
+* **Deck Strategy**: **Mega Abomasnow ex & Kyogre** Water Energy Acceleration.
+* **Selection Contract Validator (`validate_selection`, `legal_selection`)**: Mathematically enforces $\text{minCount} \le |\text{selection}| \le \text{maxCount}$, filters duplicate card indices, and ensures 100% legal submissions under all engine edge cases.
+* **Hierarchical Action Priority**: Evaluates legal options in $O(1)$ time per choice:
+  * ⚔️ **Attacks & 1HKO Lethals**: ~18,000 – 100,000+
+  * 🧬 **Evolution Sequences**: ~70,000 + ($\text{attached energy} \times 500$)
+  * 👥 **Supporters & Hand Refresh**: ~42,000 (adaptive hand size gating)
+  * 💧 **Energy Attachment Tempo**: ~35,000 – 39,000 (strict active-first priority)
+  * 🎒 **Item / Search Deployments**: Buddy-Buddy Poffin, Ultra Ball, Nest Ball
+
+### 2. Memetic Evolutionary Agent: Codex Sol Eclipse Alakazam
+* **Source**: [`codex_sol_eclipse_alakazam.py`](codex_sol_eclipse_alakazam.py) | **Module**: [`agents/sol_eclipse_alakazam/`](agents/sol_eclipse_alakazam/)
+* **Deck Strategy**: **Alakazam Courage / Dudunsparce / Fezandipiti ex** (60 cards).
+* **69-Parameter Tuned Genome**: Optimized weights governing Pokémon benching, item timing, tool attachments, and retreat costs.
+* **Lean Hilda Supporter Tuning (`hilda: 3150`)**: Prioritizes key evolution assembly (Abra $\to$ Kadabra $\to$ Alakazam), yielding a statistically confirmed $+7.8\%$ decisive win rate lift.
+* **Teleportation Retreat Engine**: Uses Alakazam's innate Teleportation rather than discarding energy for manual retreat, preserving attack tempo.
+
+### 3. Modular Planning Stack (`ptcg_planning/`)
+A principled five-layer decomposition developed to test beyond greedy heuristics:
+* **P1 (`state_features.py`)**: Vectorized board representation (HP balance, energy acceleration, bench saturation, prize differential).
+* **P2 (`threat_model.py`)**: Computes opponent lethal damage output and 1HKO danger zones.
+* **P3 (`prob_info.py`)**: Closed-form hypergeometric draw probabilities respecting strict information boundaries.
+* **P4 (`counterfactual.py`)**: Short-horizon 1-ply rollout leaf valuation.
+* **P5 (`planner.py`)**: Statistically gated meta-policy ($\tau$-thresholding) ensuring candidate layers only intervene when confidence delta strictly exceeds $\tau$.
+
 ---
 
 ## 📊 Empirical Benchmarks
 
-### Head-to-Head Tournament Results
+### Evaluation Metrics
+* **Decisive Win Rate** $= \frac{W}{W + L} \times 100\%$: Measures competitive edge on resolved games (standard in high-draw card game arenas).
+* **Overall Win Rate** $= \frac{W}{W + L + D} \times 100\%$: Raw win percentage across all games including turn-cap timeouts.
 
-| Agent Architecture | Target Deck | Matches | Record (W–L–D) | Decisive Win Rate | 95% Wilson CI | Legality Errors |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **CITADEL MIKE V4** | Mega Abomasnow ex | 20 | **14W – 6L – 0D** | **70.00%** | [48.1%, 85.5%] | **0** |
-| **Sol Eclipse (Hilda 3150)** | Alakazam Courage | 400 | **67W – 49L – 284D** | **57.76%** | [48.7%, 66.4%] | **0** |
-| **Sol Eclipse (Confirmation)**| Alakazam Courage | 200 | **34W – 24L – 142D** | **58.62%** | [45.8%, 70.3%] | **0** |
-| **Hybrid Stage 4 (Paired)** | Alakazam / Water | 200 | **24W – 14L – 112D** | **63.16%** | [47.6%, 76.4%] | **0** |
-| **CITADEL V2 (Search D2-D3)**| Water Aggro | 100 | **42W – 58L – 0D** | **42.00%** | [32.8%, 51.8%] | 14 (Timeouts) |
+### Comprehensive Head-to-Head Benchmark Table
 
-### Telemetry Corpus Analysis
-Across **6,482 recorded game states** ([`v4_state_corpus.csv`](v4_state_corpus.csv)) from 300 complete matches, decision frequency by game phase:
-* **Attack Executions**: 18.4% of turns
-* **Energy Attachments**: 24.1% of turns
-* **Supporter / Item Activations**: 31.6% of turns
-* **Evolution Plays**: 14.2% of turns
-* **Bench Placement & Promotion**: 11.7% of turns
+| System | Evaluation Setting | Deck Archetype | Matches | Record (W–L–D) | Decisive Win Rate | Overall Win Rate | 95% Wilson CI (Decisive) | Legality Errors |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **CITADEL MIKE V4** | Official Ladder Benchmark | Mega Abomasnow ex | 20 | **14–6–0** | **70.00%** | **70.00%** | [48.1%, 85.5%] | **0** |
+| **Sol Eclipse (Hilda 3150)** | Direct Pooled Head-to-Head | Alakazam Courage | 400 | **67–49–284** | **57.76%** | 16.75% | [48.7%, 66.4%] | **0** |
+| **Sol Eclipse (Confirmation)**| Independent Replication | Alakazam Courage | 200 | **34–24–142** | **58.62%** | 17.00% | [45.8%, 70.3%] | **0** |
+| **Hybrid Stage 4 (Paired)** | Divergent-State Matched Test | Alakazam / Water | 200 | **24–14–112** | **63.16%** | 12.00% | [47.6%, 76.4%] | **0** |
+| **CITADEL V2 (Deep Search)** | Minimax (D2–D3) Lookahead | Water Aggro | 100 | **42–58–0** | **42.00%** | 42.00% | [32.8%, 51.8%] | 14 (Timeouts) |
+
+---
+
+## 🔬 Experimental Discipline & Ablation Findings
+
+The defining outcome of this research was discovering what **not** to deploy. Rather than shipping speculative features, each proposed improvement was subjected to balanced 200-game match suites, Wilson 95% confidence intervals, and full decision audits ([`docs/research_report.md`](docs/research_report.md)).
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          HYPOTHESIS TESTING LIFECYCLE                       │
+│                                                                             │
+│  Hypothesis       Live Metric    95% Wilson CI     Root Cause               │
+│  ──────────       ───────────    ─────────────     ──────────               │
+│  P1 (Threat)      46.00% Win     [39.3%, 52.9%] ── Defensive Over-Caution   │
+│  P2 (Counterfac)  47.00% Win     [40.2%, 53.9%] ── Stochastic Rollout Noise │
+│  P3 (P1 + P2)     46.50% Win     [39.7%, 53.4%] ── Compounded Latency/Error │
+│  P4 (Gated KO)    52.00% Win     [45.1%, 58.8%] ── CI Spans Parity (50.0%)  │
+│  P9-H2 (Search)   0 Overrides         N/A       ── Structural Impossibility │
+│  H_DISCARD        52.50% Win     [45.6%, 59.3%] ── Offline Tooling Artifact │
+│  H_ATTACK_SELECT  51.50% Win     [44.6%, 58.3%] ── Statistically Indistinguishable│
+│                                                                             │
+│  DECISION: Freeze V4 Champion. Close heuristic branch.                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Detailed Failure Taxonomy
+
+1. **Defensive Over-Caution ($P_1$ Threat Model — 46.0% Win Rate)**:
+   Predicting 2-ply opponent damage caused the agent to retreat healthy attackers prematurely, sacrificing offensive tempo and board control.
+2. **Stochastic Rollout Noise ($P_2$ Counterfactual Engine — 47.0% Win Rate)**:
+   Simulating future plies required guessing unknown opponent hand cards and deck order uniformly. The resulting hallucinations steered decisions away from proven tactical fundamentals.
+3. **Structural / Contract Impossibility ($P_9\text{-}H_2$ Basic Pokémon Search)**:
+   Hypothesized prioritizing Basic Pokémon retrieval when the bench was empty. Live-engine audit revealed the deck's search cards (`Mega Signal`, `Cyrano`) are legally restricted to Mega Abomasnow ex. Basic Pokémon physically cannot be retrieved from deck search.
+4. **Offline Tooling Artifact ($H_{\text{DISCARD}}$ Supporter Preservation — 0 Live Overrides)**:
+   Hypothesized preferring energy discard over scarce supporters. In live `cabt` matches, `DISCARD_ENERGY` prompts strictly expose energy cards attached to active/bench Pokémon. Hand supporters are never legal discard candidates; the apparent candidate states were artifacts of offline resolver fallback indexing.
+5. **Low-Frequency Dilution ($H_{\text{ATTACK\_SELECT}}$ High-HP Discard Attack — 51.5% Win Rate)**:
+   Triggered in only 16 decisions across 8 matches (0.47% frequency). With a 95% Wilson lower bound of $44.61\% \le 50.0\%$, the variation was statistically indistinguishable from noise.
+
+**Core Research Takeaway**: In constrained stochastic simulation, **robust contract enforcement and high-tempo greedy play mathematically outperform noisy, lookahead planning**.
 
 ---
 
 ## 📁 Repository Structure
 
 ```
-POKEMON/
-├── main.py                             # Official Production Champion (MIKE V4)
-├── deck.csv                            # Official 60-card competition deck list
-├── codex_sol_eclipse_alakazam.py       # Sol Eclipse Alakazam generator & policy
-├── cg/                                 # Official CABT Simulator Engine (C++ / Python bindings)
-│   ├── api.py                          # Engine observation & action structures
-│   ├── game.py                         # Match execution & loop harness
+pokemon-tcg-ai-battle/
+├── README.md                           # Project documentation & benchmark overview
+├── LICENSE                             # MIT License
+├── main.py                             # Champion production agent (MIKE V4)
+├── deck.csv                            # Champion 60-card tournament deck
+├── codex_sol_eclipse_alakazam.py       # Sol Eclipse Alakazam memetic agent
+│
+├── agents/                             # Standalone, runnable competition agents
+│   ├── mike_v4_champion/               # MIKE V4 (70.0% win rate champion)
+│   │   ├── main.py
+│   │   └── deck.csv
+│   └── sol_eclipse_alakazam/           # Sol Eclipse Alakazam (58.6% decisive win rate)
+│       ├── main.py
+│       └── deck.csv
+│
+├── ptcg_planning/                      # Modular Planning Architecture
+│   ├── state_features.py               # P1: Board state feature vector extraction
+│   ├── threat_model.py                 # P2: Opponent damage & 1HKO danger detection
+│   ├── prob_info.py                    # P3: Bayesian card inference under hidden info
+│   ├── counterfactual.py               # P4: Short-horizon leaf evaluation
+│   ├── planner.py                      # P5: Statistically gated meta-policy
+│   └── ablation_agents.py              # Isolated experimental agent configurations
+│
+├── tests/                              # Regression & verification harnesses
+│   ├── test_ptcg_regression.py         # Head-to-head match & decision audit harness
+│   └── verify_production_promotion.py  # Production integrity & 6-game smoke verification
+│
+├── docs/                               # Formal research papers & architectural audits
+│   ├── research_report.md              # Day 53 comprehensive empirical research report
+│   ├── architecture.md                 # System lineage from V2 search to V4 control
+│   └── planning_specification.md       # Technical specification for modular planning
+│
+├── submission/                         # Reproducible Kaggle submission artifact
+│   └── final_submission.ipynb          # End-to-end submission packaging notebook
+│
+├── cg/                                 # Native CABT Simulator Engine (C++ & Python bindings)
+│   ├── api.py                          # Game state dataclasses & option schemas
+│   ├── game.py                         # Battle loop & match execution
 │   ├── sim.py                          # Low-level simulation interface
-│   ├── libcg.so                        # Linux x86_64 simulation binary
-│   ├── libcg-arm64.so                  # Linux ARM64 simulation binary
-│   ├── libcg.dylib                     # macOS Apple Silicon binary
-│   └── cg.dll                          # Windows simulation binary
-├── agents/                             # Curated, ready-to-run tournament agents
-│   ├── mike_v4_champion/               # MIKE V4 Champion (main.py + deck.csv)
-│   └── sol_eclipse_alakazam/           # Sol Eclipse Alakazam (main.py + deck.csv)
-├── ptcg_planning/                      # Next-Gen Modular Planning Engine
-│   ├── state_features.py               # Board state feature vector extraction
-│   ├── threat_model.py                 # Opponent damage calculation & 1HKO detection
-│   ├── prob_info.py                    # Hidden card Bayesian inference
-│   ├── counterfactual.py               # Short-horizon leaf evaluation
-│   └── planner.py                      # Gated meta-policy ensemble
-├── notebooks/                          # Interactive research & submission notebooks
-│   ├── CITADEL_PTCG_V2_FINAL_SUBMISSION.ipynb
-│   ├── SOL_ECLIPSE_ALAKAZAM_SUBMISSION.ipynb
-│   └── submission_notebook.ipynb
-├── docs/                               # Comprehensive research whitepapers & audits
-│   ├── ptcg_model_lineage.md           # Architecture evolution from V2 to V4 & Next-Gen
-│   ├── DAY53_RESEARCH_FINAL.md         # Exhaustive Day 53 empirical research report
-│   ├── H_HILDA_FINAL_PROMOTION_AUDIT.md# Hilda-3150 promotion audit
-│   └── HYBRID_V4_ALAKAZAM_ARCHITECTURE.md
-├── test_ptcg_regression.py             # 20-game contract regression harness
-├── verify_production_promotion.py      # Production integrity & invariant verification
-└── LICENSE                             # MIT License
+│   ├── libcg.so                        # Linux x86_64 binary
+│   ├── libcg-arm64.so                  # Linux ARM64 binary
+│   ├── libcg.dylib                     # macOS binary
+│   └── cg.dll                          # Windows binary
+│
+└── archive/                            # Archived telemetry, historical logs & experiments
+    ├── notebooks/                      # Development & exploration notebooks
+    ├── telemetry/                      # 6,482-state decision corpora & audit CSVs
+    └── experiments/                    # Historical test harnesses & ablation notes
 ```
 
 ---
@@ -191,30 +190,30 @@ POKEMON/
 * Python 3.10 or 3.11
 * Windows, Linux, or macOS
 
-### 1. Clone the Repository
+### 1. Clone & Verify
 ```bash
 git clone https://github.com/ayushshuklaivyleague-jpg/pokemon-tcg-ai-battle.git
 cd pokemon-tcg-ai-battle
+
+# Run production integrity audit & 6-game smoke test
+python tests/verify_production_promotion.py
 ```
 
-### 2. Verify Champion Legality & Run Smoke Test
-Run the automated regression test suite to verify 0 contract violations across 6 matches:
-```bash
-python verify_production_promotion.py
-```
+### 2. Run Head-to-Head Agent Battle
+Execute a battle between MIKE V4 and Sol Eclipse Alakazam using the bundled `cg` engine:
 
-### 3. Run a Head-to-Head Match Between Agents
-Simulate a full battle between two agents using the included `cg` engine:
 ```python
 import sys
-from cg.game import battle_start, battle_select
+from pathlib import Path
+from cg.game import battle_start, battle_select, battle_finish
 
-# Load champion decks
-with open("agents/mike_v4_champion/deck.csv") as f:
-    deck_v4 = [int(line.strip()) for line in f if line.strip()]
+# Load deck lists
+def load_deck(path):
+    with open(path) as f:
+        return [int(line.strip()) for line in f if line.strip()]
 
-with open("agents/sol_eclipse_alakazam/deck.csv") as f:
-    deck_sol = [int(line.strip()) for line in f if line.strip()]
+deck_v4 = load_deck("agents/mike_v4_champion/deck.csv")
+deck_sol = load_deck("agents/sol_eclipse_alakazam/deck.csv")
 
 # Import agents
 from agents.mike_v4_champion.main import v4_agent as agent_v4
@@ -222,10 +221,13 @@ from agents.sol_eclipse_alakazam.main import agent as agent_sol
 
 obs, start_data = battle_start(deck_v4, deck_sol)
 
-while True:
+step = 0
+while step < 200:
+    step += 1
     res = obs.get("current", {}).get("result")
     if res is not None and res >= 0:
-        print(f"Match Finished! Winner index: {res}")
+        winner = "MIKE V4" if res == 0 else "Sol Eclipse"
+        print(f"Match concluded in {step} turns. Winner: {winner}")
         break
 
     sel = obs.get("select")
@@ -233,56 +235,57 @@ while True:
         break
 
     p_idx = obs.get("current", {}).get("yourIndex", 0)
-    agent_fn = agent_v4 if p_idx == 0 else agent_sol
-    action = agent_fn(obs)
+    action = agent_v4(obs) if p_idx == 0 else agent_sol(obs)
     obs = battle_select(action)
+
+battle_finish()
+```
+
+### 3. Run Decision Audit Suite
+```bash
+python tests/test_ptcg_regression.py --games 20
 ```
 
 ---
 
 ## 📦 Kaggle Submission Guide
 
-To create a submission bundle for the [Kaggle Competition](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle):
-
-### Packaging MIKE V4 (Champion Model)
-Submissions must be a `.tar.gz` bundle with `main.py` and `deck.csv` at the root directory:
+Submissions require a `.tar.gz` bundle with `main.py` and `deck.csv` at the root directory:
 
 ```bash
-# On Linux / macOS / Git Bash
+# Package the production champion
 tar -czvf submission.tar.gz main.py deck.csv
 
-# Verify archive contents
+# Verify archive structure
 tar -ztvf submission.tar.gz
-# Should output:
 # main.py
 # deck.csv
 ```
 
-### Submitting to Kaggle
-1. Navigate to the [Kaggle Submissions Page](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle/submissions).
-2. Upload `submission.tar.gz`.
-3. Kaggle will automatically schedule an initial validation episode where your agent plays against a copy of itself.
-4. Once validated, your agent will enter the active matchmaking ladder with $\mu_0 = 600$.
+Upload `submission.tar.gz` on the [Kaggle Submissions Page](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle/submissions). The platform runs an initial self-play validation episode before placing the agent into matchmaking with $\mu_0 = 600$.
+
+Alternatively, execute [`submission/final_submission.ipynb`](submission/final_submission.ipynb) directly in a Kaggle Notebook environment.
 
 ---
 
-## 🔗 Official Links & Resources
+## 🔗 References & Documentation
 
 * 🏆 **Competition**: [The Pokémon Company - PTCG AI Battle Challenge Simulation](https://www.kaggle.com/competitions/pokemon-tcg-ai-battle)
-* 📖 **Simulator Documentation**: [cabt Engine API Docs](https://matsuoinstitute.github.io/cabt/)
-* 📜 **Official Pokémon TCG Rulebook**: [Play! Pokémon Rules & Resources](https://www.pokemon.com/static-assets/content-assets/cms2/pdf/trading-card-game/rulebook/meg_rulebook_en.pdf)
-* 🐙 **Kaggle Environments**: [Kaggle Environments GitHub](https://github.com/Kaggle/kaggle-environments)
+* 📖 **Simulator API**: [cabt Engine Documentation](https://matsuoinstitute.github.io/cabt/)
+* 📜 **Official Game Rules**: [Pokémon TCG Rulebook (PDF)](https://www.pokemon.com/static-assets/content-assets/cms2/pdf/trading-card-game/rulebook/meg_rulebook_en.pdf)
+* 📑 **Research Report**: [Day 53 Comprehensive Findings](docs/research_report.md)
+* 🏛️ **Lineage Audit**: [Architecture & Model Evolution](docs/architecture.md)
 
 ---
 
-## 📄 Citation
+## 📄 License & Attribution
 
-If you use these models, telemetry corpora, or architectures in your research or tournament submissions, please cite:
+Distributed under the [MIT License](LICENSE).
 
 ```bibtex
 @misc{shukla2026pokemontcgai,
   author = {Ayush A. Shukla},
-  title = {Competitive Simulation Champions for the Pokémon Trading Card Game AI Battle Challenge},
+  title = {Competitive Agent Engineering for the Pokémon Trading Card Game AI Battle Simulation},
   year = {2026},
   publisher = {GitHub},
   howpublished = {\url{https://github.com/ayushshuklaivyleague-jpg/pokemon-tcg-ai-battle}}
@@ -292,5 +295,5 @@ If you use these models, telemetry corpora, or architectures in your research or
 ---
 
 <div align="center">
-Made with ⚡ by <b>Ayush A. Shukla</b>
+Developed by <b>Ayush A. Shukla</b>
 </div>
