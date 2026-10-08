@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Large competition zip archives (>100MB cannot be pushed to GitHub)
+*.zip
+pokemon-tcg-ai-battle.zip
+pokemon-tcg-ai-battle - Copy.zip
+
+# Temporary & OS
+.DS_Store
+Thumbs.db
+*.bak*
+*.tmp
+.system_generated/
+.idea/
+.vscode/

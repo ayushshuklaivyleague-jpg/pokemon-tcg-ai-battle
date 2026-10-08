@@ -1,0 +1,75 @@
+control_action,candidate_action,count,unique_games,wins,losses,draws,decisive_wr,avg_turn,avg_hand_size,avg_alakazam_count,early_pct,mid_pct,late_pct
+PLAY(Dawn),PLAY(Hilda),213,128,23,16,89,58.97,7.6,9.9,1.37,15.0,37.1,47.9
+PLAY(Hilda),PLAY(Buddy-Buddy Poffin),5,5,2,0,3,100.0,8.8,8.2,1.8,0.0,40.0,60.0
+PLAY(Hilda),PLAY(Night Stretcher),3,2,0,0,2,,9.0,7.7,1.33,0.0,0.0,100.0
+PLAY(Dawn),PLAY(Dawn),2,2,0,0,2,,12.5,12.5,1.5,0.0,0.0,100.0
+PLAY(Hilda),PLAY(Hilda),2,2,0,1,1,0.0,13.5,7.5,0.0,0.0,0.0,100.0
+EVOLVE(Dudunsparce on Dunsparce),EVOLVE(Alakazam on Kadabra),2,2,0,0,2,,12.0,8.5,0.5,0.0,0.0,100.0
+EVOLVE(Alakazam on Kadabra),EVOLVE(Alakazam on Kadabra),2,2,0,1,1,0.0,10.0,12.0,0.5,0.0,50.0,50.0
+PLAY(Hilda),PLAY(Poké Pad),2,2,1,0,1,100.0,7.5,6.5,1.0,0.0,50.0,50.0
+EVOLVE(Dudunsparce on Dunsparce),PLAY(Hilda),2,2,0,0,2,,10.5,5.0,0.5,0.0,0.0,100.0
+PLAY(Buddy-Buddy Poffin),EVOLVE(Alakazam on Kadabra),2,2,0,0,2,,7.0,13.0,1.0,0.0,100.0,0.0
+PLAY(Night Stretcher),PLAY(Hilda),2,2,0,0,2,,8.5,10.5,1.0,0.0,0.0,100.0
+PLAY(Sacred Ash),EVOLVE(Dudunsparce on Dunsparce),1,1,0,0,1,,7.0,14.0,2.0,0.0,100.0,0.0
+PLAY(Boss’s Orders),ABILITY(Dudunsparce),1,1,0,1,0,0.0,13.0,4.0,1.0,0.0,0.0,100.0
+PLAY(Buddy-Buddy Poffin),PLAY(Dawn),1,1,0,0,1,,13.0,11.0,2.0,0.0,0.0,100.0
+PLAY(Abra),PLAY(Dawn),1,1,0,0,1,,7.0,15.0,1.0,0.0,100.0,0.0
+PLAY(Abra),EVOLVE(Alakazam on Kadabra),1,1,0,0,1,,7.0,13.0,0.0,0.0,100.0,0.0
+ATTACH(Telepath Psychic Energy -> Kadabra@5),ATTACH(Telepath Psychic Energy -> Alakazam@5),1,1,0,0,1,,9.0,9.0,2.0,0.0,0.0,100.0
+ABILITY(Dudunsparce),PLAY(Dawn),1,1,0,1,0,0.0,13.0,6.0,1.0,0.0,0.0,100.0
+EVOLVE(Dudunsparce on Dunsparce),PLAY(Buddy-Buddy Poffin),1,1,0,0,1,,11.0,11.0,2.0,0.0,0.0,100.0
+PLAY(Rare Candy),PLAY(Boss’s Orders),1,1,0,0,1,,13.0,10.0,0.0,0.0,0.0,100.0
+EVOLVE(Alakazam on Kadabra),ATTACH(Telepath Psychic Energy -> Alakazam@5),1,1,0,0,1,,11.0,10.0,1.0,0.0,0.0,100.0
+PLAY(Hilda),PLAY(Abra),1,1,0,0,1,,9.0,8.0,1.0,0.0,0.0,100.0
+PLAY(Boss’s Orders),EVOLVE(Dudunsparce on Dunsparce),1,1,0,0,1,,11.0,8.0,2.0,0.0,0.0,100.0
+PLAY(Buddy-Buddy Poffin),PLAY(Night Stretcher),1,1,0,0,1,,11.0,10.0,2.0,0.0,0.0,100.0
+PLAY(Poké Pad),EVOLVE(Dudunsparce on Dunsparce),1,1,0,0,1,,7.0,15.0,2.0,0.0,100.0,0.0
+PLAY(Hilda),PLAY(Dunsparce),1,1,0,0,1,,9.0,9.0,1.0,0.0,0.0,100.0
+PLAY(Dawn),EVOLVE(Dudunsparce on Dunsparce),1,1,0,0,1,,9.0,13.0,2.0,0.0,0.0,100.0
+PLAY(Dawn),PLAY(Abra),1,1,0,0,1,,9.0,14.0,1.0,0.0,0.0,100.0
+PLAY(Hilda),ATTACH(Telepath Psychic Energy -> Kadabra@5),1,1,0,0,1,,9.0,5.0,0.0,0.0,0.0,100.0
+PLAY(Hilda),EVOLVE(Dudunsparce on Dunsparce),1,1,0,0,1,,9.0,4.0,0.0,0.0,0.0,100.0
+ABILITY(Dudunsparce),PLAY(Hilda),1,1,0,0,1,,9.0,3.0,0.0,0.0,0.0,100.0
+ATTACH(Telepath Psychic Energy -> Alakazam@4),PLAY(Hilda),1,1,0,0,1,,7.0,14.0,2.0,0.0,100.0,0.0
+EVOLVE(Alakazam on Kadabra),ATTACH(Telepath Psychic Energy -> Kadabra@4),1,1,0,0,1,,11.0,13.0,0.0,0.0,0.0,100.0
+PLAY(Hilda),PLAY(Dawn),1,1,0,0,1,,11.0,14.0,1.0,0.0,0.0,100.0
+EVOLVE(Dudunsparce on Dunsparce),EVOLVE(Kadabra on Abra),1,1,0,1,0,0.0,11.0,7.0,0.0,0.0,0.0,100.0
+PLAY(Hilda),ATTACH(Telepath Psychic Energy -> Abra@5),1,1,0,0,1,,9.0,8.0,2.0,0.0,0.0,100.0
+PLAY(Hilda),EVOLVE(Alakazam on Kadabra),1,1,0,0,1,,9.0,14.0,2.0,0.0,0.0,100.0
+PLAY(Boss’s Orders),PLAY(Hilda),1,1,0,0,1,,9.0,15.0,3.0,0.0,0.0,100.0
+PLAY(Dawn),PLAY(Xerosic’s Machinations),1,1,0,0,1,,9.0,16.0,3.0,0.0,0.0,100.0
+PLAY(Dunsparce),PLAY(Xerosic’s Machinations),1,1,0,1,0,0.0,7.0,8.0,0.0,0.0,100.0,0.0
+ABILITY(Dudunsparce),PLAY(Abra),1,1,0,0,1,,10.0,6.0,1.0,0.0,0.0,100.0
+EVOLVE(Alakazam on Kadabra),PLAY(Rare Candy),1,1,0,0,1,,7.0,11.0,0.0,0.0,100.0,0.0
+PLAY(Buddy-Buddy Poffin),PLAY(Boss’s Orders),1,1,0,0,1,,8.0,9.0,1.0,0.0,0.0,100.0
+PLAY(Buddy-Buddy Poffin),PLAY(Lana’s Aid),1,1,0,0,1,,8.0,9.0,2.0,0.0,0.0,100.0
+PLAY(Lana’s Aid),EVOLVE(Kadabra on Abra),1,1,0,0,1,,8.0,9.0,0.0,0.0,0.0,100.0
+PLAY(Night Stretcher),PLAY(Xerosic’s Machinations),1,1,0,0,1,,8.0,10.0,0.0,0.0,0.0,100.0
+PLAY(Dunsparce),PLAY(Dawn),1,1,0,1,0,0.0,14.0,9.0,0.0,0.0,0.0,100.0
+ABILITY(Dudunsparce),EVOLVE(Dudunsparce on Dunsparce),1,1,0,0,1,,12.0,10.0,0.0,0.0,0.0,100.0
+PLAY(Boss’s Orders),PLAY(Buddy-Buddy Poffin),1,1,0,1,0,0.0,10.0,14.0,1.0,0.0,0.0,100.0
+PLAY(Sacred Ash),PLAY(Boss’s Orders),1,1,0,1,0,0.0,10.0,13.0,1.0,0.0,0.0,100.0
+PLAY(Lana’s Aid),PLAY(Poké Pad),1,1,0,0,1,,10.0,13.0,1.0,0.0,0.0,100.0
+EVOLVE(Kadabra on Abra),ATTACH(Basic {P} Energy -> Abra@4),1,1,0,0,1,,6.0,9.0,0.0,0.0,100.0,0.0
+ATTACK(Teleportation),PLAY(Dawn),1,1,0,0,1,,6.0,8.0,0.0,0.0,100.0,0.0
+PLAY(Rare Candy),PLAY(Night Stretcher),1,1,0,0,1,,8.0,11.0,1.0,0.0,0.0,100.0
+EVOLVE(Kadabra on Abra),PLAY(Rare Candy),1,1,0,0,1,,8.0,11.0,1.0,0.0,0.0,100.0
+EVOLVE(Alakazam on Kadabra),PLAY(Boss’s Orders),1,1,0,0,1,,8.0,11.0,2.0,0.0,0.0,100.0
+PLAY(Dawn),PLAY(Night Stretcher),1,1,0,0,1,,10.0,13.0,1.0,0.0,0.0,100.0
+EVOLVE(Kadabra on Abra),EVOLVE(Kadabra on Abra),1,1,0,0,1,,10.0,10.0,1.0,0.0,0.0,100.0
+EVOLVE(Alakazam on Kadabra),ATTACH(Basic {P} Energy -> Kadabra@5),1,1,0,0,1,,8.0,8.0,0.0,0.0,0.0,100.0
+EVOLVE(Dudunsparce on Dunsparce),PLAY(Boss’s Orders),1,1,0,0,1,,12.0,13.0,1.0,0.0,0.0,100.0
+PLAY(Dunsparce),PLAY(Night Stretcher),1,1,0,0,1,,10.0,8.0,2.0,0.0,0.0,100.0
+EVOLVE(Dudunsparce on Dunsparce),EVOLVE(Dudunsparce on Dunsparce),1,1,0,0,1,,12.0,9.0,1.0,0.0,0.0,100.0
+EVOLVE(Kadabra on Abra),PLAY(Abra),1,1,0,0,1,,6.0,9.0,0.0,0.0,100.0,0.0
+PLAY(Dunsparce),EVOLVE(Kadabra on Abra),1,1,0,0,1,,6.0,9.0,0.0,0.0,100.0,0.0
+PLAY(Sacred Ash),EVOLVE(Alakazam on Kadabra),1,1,0,0,1,,8.0,10.0,1.0,0.0,0.0,100.0
+PLAY(Hilda),PLAY(Rare Candy),1,1,0,0,1,,10.0,14.0,0.0,0.0,0.0,100.0
+EVOLVE(Dudunsparce on Dunsparce),ATTACH(Basic {P} Energy -> Alakazam@4),1,1,0,0,1,,8.0,12.0,1.0,0.0,0.0,100.0
+EVOLVE(Alakazam on Kadabra),PLAY(Buddy-Buddy Poffin),1,1,0,1,0,0.0,14.0,8.0,0.0,0.0,0.0,100.0
+ATTACH(Telepath Psychic Energy -> Alakazam@5),PLAY(Buddy-Buddy Poffin),1,1,0,1,0,0.0,14.0,10.0,2.0,0.0,0.0,100.0
+PLAY(Poké Pad),PLAY(Buddy-Buddy Poffin),1,1,0,1,0,0.0,14.0,9.0,2.0,0.0,0.0,100.0
+PLAY(Hilda),ABILITY(Dudunsparce),1,1,0,1,0,0.0,14.0,6.0,2.0,0.0,0.0,100.0
+PLAY(Dawn),PLAY(Lana’s Aid),1,1,0,0,1,,8.0,11.0,2.0,0.0,0.0,100.0
+PLAY(Abra),PLAY(Sacred Ash),1,1,0,0,1,,10.0,7.0,1.0,0.0,0.0,100.0
+PLAY(Hilda),PLAY(Xerosic’s Machinations),1,1,0,0,1,,7.0,14.0,2.0,0.0,100.0,0.0

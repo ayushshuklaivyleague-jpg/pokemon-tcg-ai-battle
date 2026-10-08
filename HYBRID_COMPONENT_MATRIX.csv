@@ -1,0 +1,18 @@
+Component,Source,Layer,Empirical Status,Decision Frequency,Risk Level,Keep/Reject,Reason
+Selection Contract & SDK Validation,MIKE V4,Layer 1 (Contract),A. PROVEN / REPLICATED,100% of decisions,Very Low,KEEP,Zero contract violations across >50k decisions; prevents engine crashes
+Deterministic Fallback Cascade,MIKE V4,Layer 1 (Contract),A. PROVEN / REPLICATED,<0.01% (emergency only),Very Low,KEEP,Guarantees legal move emission even under corrupt/unhandled states
+Unified Card Table & Type Resolution,MIKE V4 / Sol Eclipse,Layer 1 (Contract),A. PROVEN / REPLICATED,100% of decisions,Very Low,KEEP,Fast O(1) card metadata lookups and type enum casting
+Rich Field/Hand/Discard Counters,Sol Eclipse,Layer 2 (State),A. PROVEN / REPLICATED,100% of decisions,Low,KEEP,Essential for combo assembly tracking and discard recovery
+Opponent Threat Modeling,Sol Eclipse,Layer 2 (State),A. PROVEN / REPLICATED,100% of decisions,Low,KEEP,Enables dynamic hand disruption (Xerosic) and stadium counter-play
+Safe Draws & Fatigue Estimation,Sol Eclipse,Layer 2 (State),A. PROVEN / REPLICATED,All Draw Prompts,Low,KEEP,Prevents suicidal overdrawing in late-game deck fatigue states
+Deterministic Base Policy Hierarchy,MIKE V4,Layer 3 (Base Policy),A. PROVEN / REPLICATED,100% of decisions,Low,KEEP,Fast and stable primary action baseline
+Xerosic Hand Suppression (Weight 3250),Sol Eclipse,Layer 4 (Genome),A. PROVEN / REPLICATED,Supporter Prompts (Opp Hand >= 6),Medium,KEEP,Critical mirror hand suppression; 77.8% decisive WR when active
+Global Hilda Priority (Weight 3150),Sol Eclipse,Layer 4 (Genome),A. PROVEN / REPLICATED,Dawn/Hilda Competitions,Medium,KEEP,57.76% decisive WR in 400 pooled games (67W-49L); 72.46% in override games
+Dawn Baseline Priority (Weight 3100),Sol Eclipse,Layer 4 (Genome),A. PROVEN / REPLICATED,General Draw Prompts,Low,KEEP,Reliable 3-card draw when disruption or targeted search is not required
+Selective 1-Ply Search Layer,Sol Eclipse,Layer 5 (Search),B. PROMISING / REPLICATED,MAIN Context Only (~15%),Medium,KEEP (GATED),Provides valuable combo forward evaluation; gated to avoid search latency
+Confidence-Gated Override Mechanism,New Hybrid,Layer 6 (Override),B. PROPOSED,Override States (~2%),Low,KEEP,Ensures search only overrides base policy when score delta exceeds threshold
+H_XEROSIC Priority Inversion (Weight 2950),Research Experiment,Layer 4 (Genome),C. REJECTED,Supporter Prompts,High,REJECT,Failed benchmark: 37.9% decisive WR; crippling loss of mirror hand disruption
+H_HILDA_CONDITIONAL (Evolution Gated),Research Experiment,Layer 4 (Genome),C. REJECTED,Dawn/Hilda Competitions,Low,REJECT,Produced exact parity (50.0% WR on overrides); unnecessary runtime complexity
+H_DISCARD (Energy vs Supporter Discard),Research Experiment,Layer 3 (Base Policy),C. REJECTED / DORMANT,Discard Prompts,Low,REJECT,Zero overrides across 3346 decisions; structurally dormant
+P9-H1 / P9-H2 Heuristic Tweaks,Research Experiment,Layer 3 (Base Policy),C. REJECTED / CLOSED,Evolution Prompts,Medium,REJECT,Subsumed by global WEIGHTS genome tuning
+Global Unrestricted Search Everywhere,Sol Eclipse Baseline,Layer 5 (Search),C. REJECTED,100% of decisions,High,REJECT,Excessive CPU latency and risk of tournament time-outs

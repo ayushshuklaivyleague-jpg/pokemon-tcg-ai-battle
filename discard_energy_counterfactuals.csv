@@ -1,0 +1,371 @@
+game_id,step,turn,player_idx,v4_selected_card_name,v4_selected_resource_group,v4_choice_score,num_legal_discard_options,all_legal_discard_candidates,had_energy_alternative,had_supporter_alternative,had_pokemon_alternative,my_hand_size,my_active_name,my_active_hp,my_active_energy,my_bench_count,my_bench_energy_total,opp_active_name,opp_active_hp,opp_active_energy,opp_bench_count,game_outcome
+7,17,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,110.0,3,1,0,Snover,0.0,2,2,WIN
+7,18,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,110.0,2,1,0,Snover,0.0,2,2,WIN
+7,29,9,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,70.0,3,1,0,Kyogre,0.0,2,1,WIN
+7,30,9,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,70.0,2,1,0,Kyogre,0.0,2,1,WIN
+9,17,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Kyogre,110.0,3,1,0,Snover,0.0,2,1,WIN
+9,18,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Kyogre,110.0,2,1,0,Snover,0.0,2,1,WIN
+9,29,9,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,70.0,3,1,0,Kyogre,0.0,2,0,WIN
+9,30,9,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,70.0,2,1,0,Kyogre,0.0,2,0,WIN
+14,15,5,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+14,16,5,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+14,19,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,8,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+14,20,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,8,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+15,17,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+15,18,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+15,21,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+15,22,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+18,14,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,8,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+18,15,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,8,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+18,18,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+18,19,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+20,18,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,150.0,3,1,0,Kyogre,20.0,2,2,LOSS
+20,19,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,150.0,2,1,0,Kyogre,20.0,2,2,LOSS
+20,22,6,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,5,Kyogre,20.0,3,2,0,Kyogre,150.0,1,1,WIN
+20,23,6,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,5,Kyogre,20.0,2,2,0,Kyogre,150.0,1,1,WIN
+20,24,6,0,Mega Signal,OTHER,30000.0,1,"[0]ENERGY(Mega Signal,s=30000)",True,False,False,5,Kyogre,20.0,1,2,0,Kyogre,150.0,1,1,WIN
+26,17,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,90.0,3,0,0,Snover,0.0,3,0,WIN
+26,18,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,90.0,2,0,0,Snover,0.0,3,0,WIN
+29,16,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+29,17,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+29,20,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+29,21,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+34,13,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+34,14,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+42,16,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,150.0,3,1,0,Kyogre,20.0,2,1,LOSS
+42,17,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,150.0,2,1,0,Kyogre,20.0,2,1,LOSS
+42,30,9,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,3,1,0,Mega Abomasnow ex,220.0,1,2,LOSS
+42,31,9,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,2,1,0,Mega Abomasnow ex,220.0,1,2,LOSS
+45,17,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,90.0,3,0,0,Snover,0.0,3,1,LOSS
+45,18,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,90.0,2,0,0,Snover,0.0,3,1,LOSS
+45,30,11,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,110.0,3,0,0,Kyogre,0.0,2,0,WIN
+45,31,11,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,110.0,2,0,0,Kyogre,0.0,2,0,WIN
+48,18,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,110.0,3,1,0,Snover,0.0,2,0,WIN
+48,19,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,110.0,2,1,0,Snover,0.0,2,0,WIN
+51,15,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,1,LOSS
+51,16,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,1,LOSS
+51,19,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,20.0,3,1,0,Kyogre,150.0,1,0,WIN
+51,20,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,20.0,2,1,0,Kyogre,150.0,1,0,WIN
+51,21,6,0,Basic {W} Energy,ENERGY,30000.0,1,"[0]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,20.0,1,1,0,Kyogre,150.0,1,0,WIN
+51,33,9,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,50.0,3,0,0,Mega Abomasnow ex,180.0,2,1,LOSS
+51,34,9,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,50.0,2,0,0,Mega Abomasnow ex,180.0,2,1,LOSS
+53,18,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,2,LOSS
+53,19,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,2,LOSS
+53,22,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,20.0,3,2,0,Kyogre,150.0,1,0,WIN
+53,23,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,20.0,2,2,0,Kyogre,150.0,1,0,WIN
+53,24,6,0,Basic {W} Energy,ENERGY,30000.0,1,"[0]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,20.0,1,2,0,Kyogre,150.0,1,0,WIN
+53,37,9,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Mega Abomasnow ex,180.0,1,3,LOSS
+53,38,9,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Mega Abomasnow ex,180.0,1,3,LOSS
+57,20,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,110.0,3,1,0,Snover,0.0,2,1,WIN
+57,21,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,110.0,2,1,0,Snover,0.0,2,1,WIN
+57,32,9,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,70.0,3,1,0,Snover,0.0,2,0,WIN
+57,33,9,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,70.0,2,1,0,Snover,0.0,2,0,WIN
+61,13,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+61,14,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+61,17,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+61,18,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+62,16,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+62,17,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+62,20,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+62,21,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+63,15,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+63,16,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+63,19,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+63,20,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+65,14,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,7,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+65,15,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,7,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+66,13,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+66,14,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+69,14,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+69,15,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+69,18,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,10,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+69,19,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,10,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+70,17,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,3,1,0,Snover,0.0,2,1,WIN
+70,18,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,2,1,0,Snover,0.0,2,1,WIN
+70,29,9,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,70.0,3,1,0,Snover,0.0,2,0,WIN
+70,30,9,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,70.0,2,1,0,Snover,0.0,2,0,WIN
+71,18,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,1,LOSS
+71,19,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,1,LOSS
+71,22,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,3,1,0,Kyogre,150.0,1,0,WIN
+71,23,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,2,1,0,Kyogre,150.0,1,0,WIN
+71,24,6,0,Waitress,WAITRESS,30000.0,1,"[0]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,1,1,0,Kyogre,150.0,1,0,WIN
+72,14,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+72,15,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+73,17,6,0,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,8,Kyogre,90.0,3,1,0,Snover,0.0,3,0,WIN
+73,18,6,0,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,8,Kyogre,90.0,2,1,0,Snover,0.0,3,0,WIN
+74,15,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+74,16,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+76,16,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,4,Kyogre,110.0,3,1,0,Snover,0.0,2,0,WIN
+76,17,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,4,Kyogre,110.0,2,1,0,Snover,0.0,2,0,WIN
+78,16,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+78,17,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+78,28,9,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,70.0,3,0,0,Snover,0.0,2,0,WIN
+78,29,9,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,70.0,2,0,0,Snover,0.0,2,0,WIN
+80,14,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+80,15,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+83,17,6,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,7,Kyogre,90.0,3,0,0,Snover,0.0,3,1,LOSS
+83,18,6,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,7,Kyogre,90.0,2,0,0,Snover,0.0,3,1,LOSS
+87,16,5,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+87,17,5,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+89,18,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,8,Kyogre,110.0,3,1,0,Snover,0.0,2,1,WIN
+89,19,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,8,Kyogre,110.0,2,1,0,Snover,0.0,2,1,WIN
+89,30,9,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,9,Kyogre,70.0,3,1,0,Kyogre,0.0,2,0,WIN
+89,31,9,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,9,Kyogre,70.0,2,1,0,Kyogre,0.0,2,0,WIN
+95,16,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,90.0,3,1,0,Snover,0.0,3,0,WIN
+95,17,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,90.0,2,1,0,Snover,0.0,3,0,WIN
+97,16,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,90.0,3,0,0,Snover,0.0,3,0,WIN
+97,17,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,90.0,2,0,0,Snover,0.0,3,0,WIN
+98,18,6,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,5,Kyogre,90.0,3,0,0,Snover,0.0,3,1,WIN
+98,19,6,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,5,Kyogre,90.0,2,0,0,Snover,0.0,3,1,WIN
+98,30,10,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,50.0,3,0,0,Snover,0.0,2,0,WIN
+98,31,10,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,50.0,2,0,0,Snover,0.0,2,0,WIN
+99,18,5,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,3,Kyogre,110.0,3,2,0,Snover,0.0,2,0,WIN
+99,19,5,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,3,Kyogre,110.0,2,2,0,Snover,0.0,2,0,WIN
+104,15,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,1,WIN
+104,16,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,1,WIN
+104,19,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,3,1,0,Kyogre,150.0,1,0,LOSS
+104,20,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,2,1,0,Kyogre,150.0,1,0,LOSS
+104,21,6,0,Waitress,WAITRESS,30000.0,1,"[0]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,1,1,0,Kyogre,150.0,1,0,LOSS
+104,33,9,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+104,34,9,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+106,15,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+106,16,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+106,19,6,0,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+106,20,6,0,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+108,18,7,1,Waitress,WAITRESS,30000.0,4,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000); [3]ENERGY(Waitress,s=30000)",True,True,False,5,Snover,20.0,4,1,0,Snover,30.0,3,0,WIN
+108,19,7,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Snover,20.0,3,1,0,Snover,30.0,3,0,WIN
+108,20,7,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Snover,20.0,2,1,0,Snover,30.0,3,0,WIN
+116,18,7,1,Lillie's Determination,LILLIE,30000.0,4,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000); [3]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Snover,20.0,4,2,0,Snover,30.0,3,0,WIN
+116,19,7,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Snover,20.0,3,2,0,Snover,30.0,3,0,WIN
+116,20,7,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Snover,20.0,2,2,0,Snover,30.0,3,0,WIN
+119,18,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,90.0,3,1,0,Snover,0.0,3,0,WIN
+119,19,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,90.0,2,1,0,Snover,0.0,3,0,WIN
+122,18,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,110.0,3,1,0,Snover,0.0,2,0,WIN
+122,19,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,110.0,2,1,0,Snover,0.0,2,0,WIN
+124,27,7,1,Waitress,WAITRESS,30000.0,4,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000); [3]ENERGY(Waitress,s=30000)",True,True,False,5,Mega Abomasnow ex,80.0,4,1,0,Mega Abomasnow ex,150.0,2,2,LOSS
+124,28,7,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Mega Abomasnow ex,80.0,3,1,0,Mega Abomasnow ex,150.0,2,2,LOSS
+124,29,7,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Mega Abomasnow ex,80.0,2,1,0,Mega Abomasnow ex,150.0,2,2,LOSS
+124,30,7,1,Waitress,WAITRESS,30000.0,1,"[0]ENERGY(Waitress,s=30000)",True,True,False,5,Mega Abomasnow ex,80.0,1,1,0,Mega Abomasnow ex,150.0,2,2,LOSS
+127,19,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,40.0,3,0,0,Mega Abomasnow ex,170.0,2,0,LOSS
+127,20,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,40.0,2,0,0,Mega Abomasnow ex,170.0,2,0,LOSS
+128,15,5,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,7,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+128,16,5,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,7,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+128,27,9,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,8,Kyogre,70.0,3,0,0,Kyogre,0.0,2,0,WIN
+128,28,9,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,8,Kyogre,70.0,2,0,0,Kyogre,0.0,2,0,WIN
+130,17,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+130,18,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+132,18,5,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,8,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+132,19,5,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,8,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+139,17,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Snover,30.0,3,1,0,Snover,50.0,3,1,WIN
+139,18,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Snover,30.0,2,1,0,Snover,50.0,3,1,WIN
+139,19,6,0,Lillie's Determination,LILLIE,30000.0,1,"[0]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Snover,30.0,1,1,0,Snover,50.0,3,1,WIN
+140,16,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,90.0,3,0,0,Snover,0.0,3,0,WIN
+140,17,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,90.0,2,0,0,Snover,0.0,3,0,WIN
+144,20,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,3,Kyogre,150.0,3,2,0,Kyogre,20.0,2,1,WIN
+144,21,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,3,Kyogre,150.0,2,2,0,Kyogre,20.0,2,1,WIN
+144,24,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,20.0,3,1,0,Kyogre,150.0,1,2,LOSS
+144,25,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,20.0,2,1,0,Kyogre,150.0,1,2,LOSS
+144,26,6,0,Waitress,WAITRESS,30000.0,1,"[0]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,20.0,1,1,0,Kyogre,150.0,1,2,LOSS
+144,40,10,0,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,3,1,0,Kyogre,0.0,2,2,LOSS
+144,41,10,0,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,2,1,0,Kyogre,0.0,2,2,LOSS
+149,18,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Snover,30.0,3,1,0,Snover,50.0,3,1,WIN
+149,19,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Snover,30.0,2,1,0,Snover,50.0,3,1,WIN
+149,20,6,0,Basic {W} Energy,ENERGY,30000.0,1,"[0]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Snover,30.0,1,1,0,Snover,50.0,3,1,WIN
+152,15,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+152,16,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+152,19,6,0,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+152,20,6,0,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+155,16,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+155,17,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+155,20,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+155,21,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+160,15,6,0,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+160,16,6,0,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+163,16,6,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,90.0,3,0,0,Snover,0.0,3,0,WIN
+163,17,6,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,90.0,2,0,0,Snover,0.0,3,0,WIN
+166,18,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,4,Kyogre,150.0,3,2,0,Kyogre,20.0,2,1,LOSS
+166,19,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,4,Kyogre,150.0,2,2,0,Kyogre,20.0,2,1,LOSS
+166,22,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,20.0,3,1,0,Kyogre,150.0,1,2,WIN
+166,23,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,20.0,2,1,0,Kyogre,150.0,1,2,WIN
+166,24,6,0,Lillie's Determination,LILLIE,30000.0,1,"[0]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,20.0,1,1,0,Kyogre,150.0,1,2,WIN
+166,43,9,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,3,Kyogre,150.0,3,2,0,Mega Abomasnow ex,180.0,1,3,LOSS
+166,44,9,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,3,Kyogre,150.0,2,2,0,Mega Abomasnow ex,180.0,1,3,LOSS
+169,17,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+169,18,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+170,18,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+170,19,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+174,14,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+174,15,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+174,18,6,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+174,19,6,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+175,18,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+175,19,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+176,18,7,1,Waitress,WAITRESS,30000.0,4,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000); [3]ENERGY(Waitress,s=30000)",True,True,False,5,Snover,20.0,4,1,0,Snover,30.0,3,0,WIN
+176,19,7,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Snover,20.0,3,1,0,Snover,30.0,3,0,WIN
+176,20,7,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Snover,20.0,2,1,0,Snover,30.0,3,0,WIN
+178,15,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+178,16,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+179,18,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,90.0,3,0,0,Snover,0.0,3,1,WIN
+179,19,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,90.0,2,0,0,Snover,0.0,3,1,WIN
+179,30,10,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,50.0,3,0,0,Snover,0.0,2,0,WIN
+179,31,10,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,50.0,2,0,0,Snover,0.0,2,0,WIN
+180,16,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+180,17,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+180,28,9,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,70.0,3,0,0,Snover,0.0,2,0,WIN
+180,29,9,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,70.0,2,0,0,Snover,0.0,2,0,WIN
+181,16,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+181,17,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+181,20,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+181,21,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+184,18,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,3,1,0,Snover,0.0,2,0,WIN
+184,19,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,2,1,0,Snover,0.0,2,0,WIN
+187,17,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,3,2,0,Kyogre,20.0,2,1,LOSS
+187,18,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,2,2,0,Kyogre,20.0,2,1,LOSS
+187,21,6,0,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,4,Kyogre,20.0,3,1,0,Kyogre,150.0,1,2,WIN
+187,22,6,0,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,4,Kyogre,20.0,2,1,0,Kyogre,150.0,1,2,WIN
+187,23,6,0,Cyrano,OTHER,30000.0,1,"[0]ENERGY(Cyrano,s=30000)",True,True,False,4,Kyogre,20.0,1,1,0,Kyogre,150.0,1,2,WIN
+187,40,9,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,3,2,0,Mega Abomasnow ex,180.0,1,1,LOSS
+187,41,9,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,150.0,2,2,0,Mega Abomasnow ex,180.0,1,1,LOSS
+187,56,14,0,Waitress,WAITRESS,30000.0,4,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000); [3]ENERGY(Waitress,s=30000)",True,True,False,10,Mega Abomasnow ex,120.0,4,1,0,Snover,90.0,1,0,WIN
+187,57,14,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,10,Mega Abomasnow ex,120.0,3,1,0,Snover,90.0,1,0,WIN
+187,58,14,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,10,Mega Abomasnow ex,120.0,2,1,0,Snover,90.0,1,0,WIN
+187,59,14,0,Waitress,WAITRESS,30000.0,1,"[0]ENERGY(Waitress,s=30000)",True,True,False,10,Mega Abomasnow ex,120.0,1,1,0,Snover,90.0,1,0,WIN
+189,18,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,1,LOSS
+189,19,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,1,LOSS
+191,14,5,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,7,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+191,15,5,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,7,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+191,18,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+191,19,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+193,14,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+193,15,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+193,26,9,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,70.0,3,0,0,Snover,0.0,2,0,WIN
+193,27,9,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,7,Kyogre,70.0,2,0,0,Snover,0.0,2,0,WIN
+195,16,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+195,17,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+195,20,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,8,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+195,21,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,8,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+204,17,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,1,WIN
+204,18,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,1,WIN
+204,21,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,3,1,0,Kyogre,150.0,1,0,LOSS
+204,22,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,2,1,0,Kyogre,150.0,1,0,LOSS
+204,23,6,0,Basic {W} Energy,ENERGY,30000.0,1,"[0]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,1,1,0,Kyogre,150.0,1,0,LOSS
+204,35,9,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,90.0,3,0,0,Kyogre,0.0,2,1,WIN
+204,36,9,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,90.0,2,0,0,Kyogre,0.0,2,1,WIN
+209,17,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,150.0,3,2,0,Kyogre,20.0,2,1,WIN
+209,18,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,150.0,2,2,0,Kyogre,20.0,2,1,WIN
+209,21,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Kyogre,20.0,3,1,0,Kyogre,150.0,1,2,LOSS
+209,22,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Kyogre,20.0,2,1,0,Kyogre,150.0,1,2,LOSS
+209,23,6,0,Lillie's Determination,LILLIE,30000.0,1,"[0]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Kyogre,20.0,1,1,0,Kyogre,150.0,1,2,LOSS
+209,35,9,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,90.0,3,2,0,Kyogre,0.0,1,1,WIN
+209,36,9,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,90.0,2,2,0,Kyogre,0.0,1,1,WIN
+210,16,6,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,4,Snover,30.0,3,2,0,Snover,50.0,3,0,WIN
+210,17,6,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,4,Snover,30.0,2,2,0,Snover,50.0,3,0,WIN
+210,18,6,0,Mega Signal,OTHER,30000.0,1,"[0]ENERGY(Mega Signal,s=30000)",True,False,False,4,Snover,30.0,1,2,0,Snover,50.0,3,0,WIN
+216,14,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+216,15,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+216,18,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+216,19,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+219,17,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+219,18,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+225,15,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+225,16,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+225,19,6,0,Mega Signal,OTHER,30000.0,3,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000); [2]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+225,20,6,0,Mega Signal,OTHER,30000.0,2,"[0]ENERGY(Mega Signal,s=30000); [1]ENERGY(Mega Signal,s=30000)",True,False,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+231,13,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+231,14,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+232,16,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,110.0,3,1,0,Snover,0.0,2,0,WIN
+232,17,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,5,Kyogre,110.0,2,1,0,Snover,0.0,2,0,WIN
+234,17,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,3,1,0,Snover,0.0,2,0,WIN
+234,18,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,2,1,0,Snover,0.0,2,0,WIN
+238,16,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+238,17,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+238,20,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,8,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+238,21,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,8,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+243,17,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,1,WIN
+243,18,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,1,WIN
+243,21,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,3,1,0,Kyogre,150.0,1,0,LOSS
+243,22,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,2,1,0,Kyogre,150.0,1,0,LOSS
+243,23,6,0,Waitress,WAITRESS,30000.0,1,"[0]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,1,1,0,Kyogre,150.0,1,0,LOSS
+243,35,9,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+243,36,9,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+244,18,6,0,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,9,Kyogre,90.0,3,1,0,Snover,0.0,3,0,WIN
+244,19,6,0,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,9,Kyogre,90.0,2,1,0,Snover,0.0,3,0,WIN
+253,15,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,90.0,3,0,0,Snover,0.0,3,0,WIN
+253,16,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,90.0,2,0,0,Snover,0.0,3,0,WIN
+254,14,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+254,15,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+254,18,6,0,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+254,19,6,0,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+258,15,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,1,WIN
+258,16,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,1,WIN
+258,20,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,20.0,3,1,0,Kyogre,150.0,1,0,LOSS
+258,21,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,20.0,2,1,0,Kyogre,150.0,1,0,LOSS
+258,22,6,0,Waitress,WAITRESS,30000.0,1,"[0]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,20.0,1,1,0,Kyogre,150.0,1,0,LOSS
+258,34,9,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+258,35,9,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+266,15,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+266,16,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+266,19,6,0,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+266,20,6,0,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+271,14,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+271,15,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+271,19,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+271,20,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+273,17,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+273,18,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+273,29,9,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,70.0,3,0,0,Snover,0.0,2,0,WIN
+273,30,9,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,70.0,2,0,0,Snover,0.0,2,0,WIN
+274,18,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,2,LOSS
+274,19,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,2,LOSS
+274,30,9,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,70.0,3,0,0,Snover,0.0,2,1,LOSS
+274,31,9,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,7,Kyogre,70.0,2,0,0,Snover,0.0,2,1,LOSS
+275,15,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+275,16,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+275,19,6,0,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+275,20,6,0,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+276,18,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+276,19,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,4,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+276,22,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+276,23,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,5,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+277,13,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+277,14,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+277,17,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+277,18,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+278,14,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+278,15,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+282,13,5,1,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,3,0,0,Snover,0.0,2,0,WIN
+282,14,5,1,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,110.0,2,0,0,Snover,0.0,2,0,WIN
+283,16,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,150.0,3,1,0,Kyogre,20.0,2,0,WIN
+283,17,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,150.0,2,1,0,Kyogre,20.0,2,0,WIN
+283,20,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,1,LOSS
+283,21,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,1,LOSS
+285,16,5,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,110.0,3,0,0,Snover,0.0,2,1,WIN
+285,17,5,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,5,Kyogre,110.0,2,0,0,Snover,0.0,2,1,WIN
+285,28,9,1,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,70.0,3,0,0,Kyogre,0.0,2,0,WIN
+285,29,9,1,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,70.0,2,0,0,Kyogre,0.0,2,0,WIN
+291,16,6,0,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,90.0,3,0,0,Snover,0.0,3,1,WIN
+291,17,6,0,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,6,Kyogre,90.0,2,0,0,Snover,0.0,3,1,WIN
+291,29,10,0,Mega Abomasnow ex,POKEMON,30000.0,3,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000); [2]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,30.0,3,0,0,Kyogre,0.0,2,0,WIN
+291,30,10,0,Mega Abomasnow ex,POKEMON,30000.0,2,"[0]ENERGY(Mega Abomasnow ex,s=30000); [1]ENERGY(Mega Abomasnow ex,s=30000)",True,False,True,7,Kyogre,30.0,2,0,0,Kyogre,0.0,2,0,WIN
+292,17,6,0,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Snover,30.0,3,1,0,Snover,50.0,3,1,LOSS
+292,18,6,0,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Snover,30.0,2,1,0,Snover,50.0,3,1,LOSS
+292,19,6,0,Lillie's Determination,LILLIE,30000.0,1,"[0]ENERGY(Lillie's Determination,s=30000)",True,True,False,5,Snover,30.0,1,1,0,Snover,50.0,3,1,LOSS
+292,36,9,1,Cyrano,OTHER,30000.0,5,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000); [3]ENERGY(Cyrano,s=30000); [4]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,40.0,5,1,0,Mega Abomasnow ex,290.0,2,0,WIN
+292,37,9,1,Cyrano,OTHER,30000.0,4,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000); [3]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,40.0,4,1,0,Mega Abomasnow ex,290.0,2,0,WIN
+292,38,9,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,40.0,3,1,0,Mega Abomasnow ex,290.0,2,0,WIN
+292,39,9,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,40.0,2,1,0,Mega Abomasnow ex,290.0,2,0,WIN
+297,23,7,1,Cyrano,OTHER,30000.0,4,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000); [3]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,70.0,4,1,0,Mega Abomasnow ex,150.0,2,0,WIN
+297,24,7,1,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,70.0,3,1,0,Mega Abomasnow ex,150.0,2,0,WIN
+297,25,7,1,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,70.0,2,1,0,Mega Abomasnow ex,150.0,2,0,WIN
+297,26,7,1,Cyrano,OTHER,30000.0,1,"[0]ENERGY(Cyrano,s=30000)",True,True,False,5,Mega Abomasnow ex,70.0,1,1,0,Mega Abomasnow ex,150.0,2,0,WIN
+298,17,5,1,Lillie's Determination,LILLIE,30000.0,3,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000); [2]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,3,0,0,Kyogre,20.0,2,0,WIN
+298,18,5,1,Lillie's Determination,LILLIE,30000.0,2,"[0]ENERGY(Lillie's Determination,s=30000); [1]ENERGY(Lillie's Determination,s=30000)",True,True,False,6,Kyogre,150.0,2,0,0,Kyogre,20.0,2,0,WIN
+298,21,6,0,Waitress,WAITRESS,30000.0,3,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000); [2]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,3,0,0,Kyogre,20.0,1,0,LOSS
+298,22,6,0,Waitress,WAITRESS,30000.0,2,"[0]ENERGY(Waitress,s=30000); [1]ENERGY(Waitress,s=30000)",True,True,False,6,Kyogre,20.0,2,0,0,Kyogre,20.0,1,0,LOSS
+300,16,5,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,150.0,3,1,0,Kyogre,20.0,2,1,WIN
+300,17,5,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,150.0,2,1,0,Kyogre,20.0,2,1,WIN
+300,20,6,0,Cyrano,OTHER,30000.0,3,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000); [2]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,20.0,3,1,0,Kyogre,150.0,1,1,LOSS
+300,21,6,0,Cyrano,OTHER,30000.0,2,"[0]ENERGY(Cyrano,s=30000); [1]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,20.0,2,1,0,Kyogre,150.0,1,1,LOSS
+300,22,6,0,Cyrano,OTHER,30000.0,1,"[0]ENERGY(Cyrano,s=30000)",True,True,False,5,Kyogre,20.0,1,1,0,Kyogre,150.0,1,1,LOSS
+300,33,9,1,Basic {W} Energy,ENERGY,30000.0,3,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000); [2]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,90.0,3,1,0,Kyogre,0.0,1,1,WIN
+300,34,9,1,Basic {W} Energy,ENERGY,30000.0,2,"[0]ENERGY(Basic {W} Energy,s=30000); [1]ENERGY(Basic {W} Energy,s=30000)",True,False,False,4,Kyogre,90.0,2,1,0,Kyogre,0.0,1,1,WIN
