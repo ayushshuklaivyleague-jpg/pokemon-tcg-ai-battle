@@ -21,7 +21,9 @@ import cg.api as api
 from cg.game import battle_start, battle_select, battle_finish
 
 PROD_FILE = ROOT / "codex_sol_eclipse_alakazam.py"
-BAK_FILE = ROOT / "archive" / "experiments" / "codex_sol_eclipse_alakazam.py.bak_pre_hilda3150"
+TRACKED_BAK = ROOT / "archive" / "experiments" / "backup_codex_sol_eclipse_alakazam.py"
+LOCAL_BAK = ROOT / "archive" / "experiments" / "codex_sol_eclipse_alakazam.py.bak_pre_hilda3150"
+BAK_FILE = TRACKED_BAK if TRACKED_BAK.exists() else LOCAL_BAK
 
 raw_prod = PROD_FILE.read_text(encoding="utf-8")
 raw_bak = BAK_FILE.read_text(encoding="utf-8")

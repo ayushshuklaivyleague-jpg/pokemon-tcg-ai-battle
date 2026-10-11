@@ -1,6 +1,9 @@
 """
 Short-Horizon Counterfactual Evaluation Module.
-Evaluates the immediate state consequences and tactical value deltas of candidate actions.
+
+Evaluates immediate tactical state consequences and delta scores for candidate actions
+using calibrated 1-ply heuristic simulations (attack damage knockout checks, lethal retreat
+threat avoidance, and tempo valuation) rather than full tree-search counterfactual regret minimization.
 """
 
 from dataclasses import dataclass

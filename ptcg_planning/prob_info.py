@@ -1,6 +1,9 @@
 """
 Information-Boundary & Probability Modeling.
-Calculates legitimate probabilities for deck drawing and search utility without leaking hidden variables.
+
+Calculates first-order marginal drawing probabilities and search utility without leaking
+hidden variables, estimating deck and prize partitions from public visible cards using
+card-conservation accounting.
 """
 
 from dataclasses import dataclass
