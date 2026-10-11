@@ -42,11 +42,13 @@ In our evaluated simulator setting, robust contract enforcement and high-tempo g
 
 | System | Evaluation Setting | Deck Archetype | Matches | Record (W–L–D) | Decisive Win Rate | Overall Win Rate | 95% Wilson CI (Decisive) | Legality Errors |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **CITADEL MIKE V4** | Official Ladder Benchmark | Mega Abomasnow ex | 20 | **14–6–0** | **70.00%** | **70.00%** | [48.1%, 85.5%] | **0** |
+| **CITADEL MIKE V4** | Local Paired Match Suite (20 Games) | Mega Abomasnow ex | 20 | **14–6–0** | **70.00%** | **70.00%** | [48.1%, 85.5%]* | **0** |
 | **Sol Eclipse (Hilda 3150)** | Direct Pooled Head-to-Head | Alakazam Courage | 400 | **67–49–284** | **57.76%** | 16.75% | [48.7%, 66.4%] | **0** |
 | **Sol Eclipse (Confirmation)**| Independent Replication | Alakazam Courage | 200 | **34–24–142** | **58.62%** | 17.00% | [45.8%, 70.3%] | **0** |
 | **Hybrid Stage 4 (Paired)** | Divergent-State Matched Test | Alakazam / Water | 200 | **24–14–112** | **63.16%** | 12.00% | [47.6%, 76.4%] | **0** |
 | **CITADEL V2 (Deep Search)** | Minimax (D2–D3) Lookahead | Water Aggro | 100 | **42–58–0** | **42.00%** | 42.00% | [32.8%, 51.8%] | 14 (Timeouts) |
+
+> * **Statistical Significance & Sample Size Note**: Across the 20-game local paired evaluation suite, CITADEL MIKE V4 achieved a 70.0% win rate (14W-6L). The 95% Wilson score confidence interval is **[48.1%, 85.5%]**. While an observed +20.0% win margin demonstrates a substantial empirical edge over the control baseline, the interval spans the 50.0% parity threshold due to the N=20 sample size. For high-powered hypothesis testing (CI_lower > 50.0%), see the 200-game match suites documented in [`archive/experiments/`](archive/experiments/).
 
 ---
 
