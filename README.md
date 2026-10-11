@@ -18,7 +18,7 @@
 
 ## 🛠️ What I Built
 
-I engineered, evaluated, and validated autonomous competitive agents for the Kaggle Pokémon Trading Card Game AI Battle Simulation. The primary production artifact (**CITADEL MIKE V4**) is a contract-enforced, low-latency tactical engine paired with a 60-card Water Energy acceleration deck that achieved **14/20 wins (70.0%)** on the competitive benchmark ladder with **0 legality violations across 50,000+ decisions**. 
+I engineered, evaluated, and validated autonomous competitive agents for the Kaggle Pokémon Trading Card Game AI Battle Simulation. The primary production artifact (**CITADEL MIKE V4**) is a contract-enforced, low-latency tactical engine paired with a 60-card Water Energy acceleration deck that achieved **14/20 wins (70.0%)** across a controlled local paired evaluation suite with **0 legality violations across 50,000+ decisions**. 
 
 Alongside the production champion, I designed a 5-layer modular planning stack (`ptcg_planning/`) to explore whether threat modeling, Bayesian probability, and counterfactual leaf search could improve decision quality under imperfect information.
 
@@ -48,7 +48,7 @@ In our evaluated simulator setting, robust contract enforcement and high-tempo g
 | **Hybrid Stage 4 (Paired)** | Divergent-State Matched Test | Alakazam / Water | 200 | **24–14–112** | **63.16%** | 12.00% | [47.6%, 76.4%] | **0** |
 | **CITADEL V2 (Deep Search)** | Minimax (D2–D3) Lookahead | Water Aggro | 100 | **42–58–0** | **42.00%** | 42.00% | [32.8%, 51.8%] | 14 (Timeouts) |
 
-> * **Statistical Significance & Sample Size Note**: Across the 20-game local paired evaluation suite, CITADEL MIKE V4 achieved a 70.0% win rate (14W-6L). The 95% Wilson score confidence interval is **[48.1%, 85.5%]**. While an observed +20.0% win margin demonstrates a substantial empirical edge over the control baseline, the interval spans the 50.0% parity threshold due to the N=20 sample size. For high-powered hypothesis testing (CI_lower > 50.0%), see the 200-game match suites documented in [`archive/experiments/`](archive/experiments/).
+> * **Statistical Significance & Sample Size Note**: Across the 20-game local paired evaluation suite, CITADEL MIKE V4 achieved a 70.0% win rate (14W-6L). The 95% Wilson score confidence interval is **[48.1%, 85.5%]**. Because this interval spans the 50.0% parity threshold due to the small sample size (N=20), this empirical result is documented as an encouraging initial benchmark rather than statistically definitive proof of superiority over control. For high-powered hypothesis testing (CI_lower > 50.0%), see the 200-game match suites documented in [`archive/experiments/`](archive/experiments/).
 
 ---
 
