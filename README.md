@@ -205,3 +205,15 @@ Distributed under the [MIT License](LICENSE).
 <div align="center">
 Developed by <b>Ayush A. Shukla</b>
 </div>
+
+
+---
+
+## 🤝 Upstream Lineage, External Dependencies & Attribution
+
+- **Game Engine & Environment**: Evaluation and simulation environments utilize cabt (Card-Action Battle Toolkit v1.14.10) developed by Matsuo Institute under the MIT License.
+- **Reference Baselines & Genomes**: Includes benchmark evaluations against community reference implementations (such as Hilda-3150 and Alakazam Courage heuristics).
+- **Original Work by Ayush Shukla**:
+  - Implementation of the production contract-enforced engine **CITADEL MIKE V4** (gents/agent_mike_v4.py) with zero legality violations across 50,000+ simulated decisions.
+  - Development of the 5-layer modular planning stack (ptcg_planning/) testing threat modeling, Bayesian hand/deck estimation, and counterfactual branch evaluation.
+  - Creation of the local regression test harness (	ests/verify_mike_v4.py and 	ests/test_ptcg_regression.py) with rigorous Wilson score confidence interval tracking.
