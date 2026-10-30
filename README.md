@@ -215,6 +215,15 @@ Developed by <b>Ayush A. Shukla</b>
 
 ---
 
+---
+
+## 🤖 AI-Assisted Development & Engineering Tool Disclosure
+
+- **Development Stack**: Python 3.10+, Matsuo Institute cabt (Card-Action Battle Toolkit v1.14.10), NumPy, and SciPy.
+- **AI Tool Assistance**: ChatGPT and Antigravity were used for agent script debugging, exploring heuristic formulations, refining contract-checking wrappers, and drafting test harnesses.
+- **Autonomous Agent Design**: CITADEL MIKE V4\'s contract-enforcement architecture, tempo heuristics, deck composition, and empirical paired-match evaluations were authored and directed by Ayush Shukla.
+
+
 ## 🤝 Upstream Lineage, External Dependencies & Attribution
 
 - **Game Engine & Environment**: Evaluation and simulation environments utilize cabt (Card-Action Battle Toolkit v1.14.10) developed by Matsuo Institute under the MIT License.
