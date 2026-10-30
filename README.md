@@ -34,6 +34,12 @@ In our evaluated simulator setting, robust contract enforcement and high-tempo g
 
 ## 📊 Benchmark Results
 
+> [!IMPORTANT]
+> **Benchmark Provenance & Sample Size Distinction**:
+> - The **70.0% win rate (14W-6L)** was measured on a **controlled local paired match suite** (20 games) against the baseline agent. While previously referred to in early drafts as an "Official Ladder Benchmark" or "External Benchmark", it is strictly an **audited local paired evaluation suite**.
+> - The 95% Wilson score confidence interval is **[48.1%, 85.5%]**. Because this interval spans 50.0% parity, it represents an encouraging local benchmark rather than statistically definitive proof of universal superiority.
+
+
 > [!NOTE]
 > **Evaluation Protocol Distinction**:  
 > * **Decisive Win Rate** $= \frac{W}{W + L} \times 100\%$ (evaluates relative skill on resolved matches; excludes draws).  
